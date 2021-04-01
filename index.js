@@ -6,7 +6,9 @@ const toppings = ['Mushrooms ', 'Tomatoes', 'Eggs', 'Chili', 'Lettuce', 'Avocado
 TASK 1 🚀
 // The customer would like to see the topping options, console log out each of the toppings one by one in the array above 
 */
-
+function eachOne(){
+    for(let i=0; i<(toppings.length; i++);
+        console.log(toppings.map(toppings[i]));
 
 /*
 TASK 2 🚀
@@ -15,13 +17,16 @@ for example you no longer have any onions and need to remove it from the list of
 Use .forEach() - hint - you will need to include the index in the callback
  */
 
+function ( array, item )
 
 
 /*
 TASK 3 🚀
 // Sort the topping alphabetically and return them in a new array 
 */
-
+function inOrder(){
+    
+}
 
 
 
