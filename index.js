@@ -58,7 +58,10 @@ let newVacations = vacations.filter(function(item){
 TASK 5 🚀
 // A developer decides to become a digital nomad for a year, they would like to live in a place with strong wifi, a beach, and good hiking, return their options
 */
-
+const remoteDev = vacations.filter(function (item) {
+    return (item.hiking = true), item.wifi === "strong", item.beach === true;
+  });
+  console.log(remoteDev);
 
 
 /* 
@@ -66,14 +69,23 @@ TASK 6 🚀
 // write a function that allows a user to sort their vacations by hiking opportunities, beach access or a mix of both and return their options
 */
 
-
+const backPacker = vacations.filter(function (item) {
+    return (item.hiking = true) && item.beach === true;
+  });
+  console.log(backPacker);
 
 /* 
 TASK 7 🚀
 // write a function that finds the average of overall ratings in a given array. The function should take an array as its argument and should return the average of the overall ratings in that array 
 hint - use .reduce()
 */
-
+const rating = function (array) {
+    total = array.reduce(function (accum, item) {
+      return accum + item.overall_rating;
+    }, 0);
+    return total / array.length;
+  };
+  console.log(rating(vacations));
 
 /*
 TASK 8 🚀
