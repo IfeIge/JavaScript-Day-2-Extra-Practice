@@ -7,8 +7,9 @@ TASK 1 🚀
 // The customer would like to see the topping options, console log out each of the toppings one by one in the array above 
 */
 function eachOne(){
-    for(let i=0; i<(toppings.length; i++);
-        console.log(toppings.map(toppings[i]));
+    for(let i=0; i<toppings.length; i++);
+        console.log(toppings.map(toppings[i]))
+}
 
 /*
 TASK 2 🚀
@@ -47,9 +48,12 @@ const vacations = [
 TASK 4 🚀
 // The travel agent would like to send a couple on their honeymoon to a location with a beach and a temperature above 90 degrees. return their options in a new array 
 */
-
-
-
+let newVacations = vacations.filter(function(item){
+    return item.temperature > 90 && item.beach === true
+  })
+  
+  console.log(newVacations)
+  
 /*
 TASK 5 🚀
 // A developer decides to become a digital nomad for a year, they would like to live in a place with strong wifi, a beach, and good hiking, return their options
